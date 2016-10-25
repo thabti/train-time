@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run prod && gh-pages -d ./.ui/build",
+    "deploy": "npm run prod && surge --project ./build --domain sabeur-trainline.surge.sh",
     "prod": "NODE_ENV=production webpack -p --progress --colors --config webpack.config.prod.js",
     "dev": "NODE_ENV=development parallelshell 'node proxy.js' 'webpack-dev-server -d --progress --colors -w --config webpack.config.js'"
   },
@@ -40,7 +40,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-clear-console": "^1.0.3",
-    "webpack-dev-server": "^1.15.0"
+    "webpack-dev-server": "^1.15.0",
+    "surge": "latest"
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
