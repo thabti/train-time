@@ -1,0 +1,3 @@
+export const RECEIVE_TRAINS = 'RECEIVE_TRAINS';
+export const REQUEST_TRAINS = 'REQUEST_TRAINS';
+export const HTTP_ERROR = 'HTTP_ERROR';

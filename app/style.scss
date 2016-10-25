@@ -1,0 +1,15 @@
+@import "styles/common.scss";
+
+.trainLine {
+  margin: auto;
+  width: 30%;
+  font-family: $base-font;
+  font-size: $base-font-size;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+}

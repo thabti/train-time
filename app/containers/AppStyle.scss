@@ -1,0 +1,70 @@
+@import "../styles/common.scss";
+
+.trainLine__main {
+  .trainLine__timetable {
+    list-style-type: none;
+    border: 1px solid $border-color;
+  }
+
+  .trainLine__timetable__item {
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid $border-color;
+    &:hover {
+      background-color: $hover-state;
+    }
+  }
+
+  .trainLine__station {
+
+    padding-bottom: 10px;
+
+    .trainLine__station__time {
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding-right: 19px;
+    }
+
+    .trainLine__station__name {
+      margin-right: 35%;
+    }
+
+    .trainLine__station__platform {
+      position: relative;
+      float: right;
+      right: 33px;
+      font-weight: 600;
+    }
+
+  }
+
+  .trainLine__chevron {
+    float: right;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .trainLine__service {
+
+    font-size: 14px;
+
+    .trainLine__service__name {
+      color: $color-grey;
+      position: relative;
+      left: 64px;
+    }
+    .trainLine__service__status{
+      position: relative;
+      float: right;
+      right: 25px;
+      &.trainLine__service__status--onTime {
+        color: green;
+        font-weight: 600;
+      }
+
+      &.trainLine__service__status-delayed{
+        color: red;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+node_modules/*
+.idea/*
+*.log
+
+
+# Any build/packaging folders
+target
+bin
+build
+sc-assets
+
+#idea
+*.iws
+*.iml
+*ipr
+*.DS_Store
+assets/**/**
+coverage
+.nyc_output
